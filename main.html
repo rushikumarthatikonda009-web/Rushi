@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to Student Finance Manager</title>
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #4facfe 0%, #00f2fe 100%);
+      display: flex; justify-content: center; align-items: center;
+      color: white;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      background: rgba(0,0,0,0.15);
+      border-radius: 20px;
+      padding: 40px 60px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      letter-spacing: 1.2px;
+    }
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #ffffff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 30px auto;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+
+    /* Button styled to look modern */
+    .redirect-btn {
+      background-color: #0066cc;
+      border: none;
+      padding: 14px 40px;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 6px 15px rgba(0, 102, 204, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none; /* Remove underline if hyperlink */
+      display: inline-block;
+      user-select: none;
+    }
+    .redirect-btn:hover {
+      background-color: #004c99;
+      box-shadow: 0 8px 20px rgba(0, 76, 153, 0.6);
+    }
+
+    small {
+      display: block;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+  <script>
+    // Redirect after 3 seconds to main.html (change as needed)
+    setTimeout(() => {
+      window.location.href = 'main.html'; // or '/' if root
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Welcome to Student Finance Manager</h1>
+    <p>Your friendly student finance dashboard is loading…</p>
+    <div class="loader" aria-label="Loading indicator"></div>
+    <!-- Button that acts as link -->
+    <a class="redirect-btn" href="AITHON1.HTML" role="button" aria-label="Go to Main Dashboard Page">Go to Dashboard Now</a>
+
+    <small>You will be redirected shortly, or click the button above to proceed immediately.</small>
+  </div>
+</body>
+</html>
+
+
